@@ -1,4 +1,6 @@
 HelloWorld::Application.routes.draw do
+  resources :people
+
   root :to => "welcome#index"
   
   get "welcome/say_hello" => "welcome#say"
